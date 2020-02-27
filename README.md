@@ -2,6 +2,8 @@
 
 A WordPress plugin to replace native WordPress comments with Commento - for static and headless WP sites.
 
+![Screenshot of Commento Comments on a WordPress site](https://share.getcloudapp.com/yAuv2b9l "Commento Comments on WordPress site")
+
 ## Setup
 
 1. Setup an account with [https://commento.io/](https://commento.io/)
