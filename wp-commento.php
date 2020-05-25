@@ -20,7 +20,7 @@ if ( ! defined( 'WPINC' ) ) {
 
 include( plugin_dir_path( __FILE__ ) . 'includes/enqueue-scripts.php');
 
-add_filter( "comments_template", "wpcommento_comment_template" );
+add_filter( 'comments_template', 'wpcommento_comment_template' );
 function wpcommento_comment_template( $comment_template ) {
   return dirname(__FILE__)  . '/templates/frontend/commento.php';      
 }
