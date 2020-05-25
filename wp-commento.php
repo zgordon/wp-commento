@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Commento.io
+Plugin Name: Commento Comments
 Plugin URI: https://github.com/zgordon/wp-commento
 Description: Replace native WordPress comments with Commento
 Version: 1.0.0
