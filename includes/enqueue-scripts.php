@@ -14,7 +14,7 @@ function wpcommento_frontend_scripts() {
 add_filter( 'script_loader_tag', 'wpcommento_defer_scripts', 10, 3 );
 function wpcommento_defer_scripts( $tag, $handle, $src ) {
     
-    $styles_url = get_stylesheet_directory_uri() . "/style.css";
+    $styles_url = get_stylesheet_directory_uri() . '/style.css';
     $defer = array( 
       'wpcommento-js'      
     );
