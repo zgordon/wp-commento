@@ -23,7 +23,7 @@ Use web inspector to find the elements you want to style and add your custom sty
 At the moment this process requires importing your WordPress comments into Disqus and then importing the comments from Disqus into Commento.
 
 1. Sign up for [Disqus](https://disqus.com/) (with a free plan)
-2. Setup your site in Disqus, choosing WordPress as your platform
+2. Setup your site in Disqus, choosing WordPress as your platform and using your live static URL in Disqus
 3. Install the [Disqus WordPress Plugin](https://wordpress.org/plugins/disqus-comment-system/)
 4. Setup the Disqus WP Plugin
 5. Copy the sync token from WordPress plugin to Disqus setup page
