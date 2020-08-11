@@ -2,13 +2,27 @@
 
 add_action( 'wp_enqueue_scripts', 'wpcommento_frontend_scripts', 100 );
 function wpcommento_frontend_scripts() {
-  wp_enqueue_script(
-    'wpcommento-js',
-    'https://cdn.commento.io/js/commento.js',
-    [],
-    '',
-    true    
-  );
+
+  $is_selfhosted = get_option( 'commento_use_selfhosted' );
+  if ( @$is_selfhosted == 1 ) {
+    $commento_host = get_option( 'commento_host' );
+
+    wp_enqueue_script(
+      'wpcommento-js',
+      $commento_host . '/js/commento.js',
+      [],
+      '',
+      true    
+    );
+  } else {
+    wp_enqueue_script(
+      'wpcommento-js',
+      'https://cdn.commento.io/js/commento.js',
+      [],
+      '',
+      true    
+    );
+  }
 }
 
 add_filter( 'script_loader_tag', 'wpcommento_defer_scripts', 10, 3 );

@@ -4,7 +4,7 @@ Plugin Name: Commento Comments
 Plugin URI: https://github.com/zgordon/wp-commento
 Description: Replace native WordPress comments with Commento
 Version: 1.0.0
-Contributors: zgordon
+Contributors: zgordon, Breuxi
 Author: Zac Gordon
 Author URI: https://zacgordon.com
 License: GPLv2 or later
@@ -19,6 +19,8 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 include( plugin_dir_path( __FILE__ ) . 'includes/enqueue-scripts.php');
+
+include( plugin_dir_path( __FILE__ )  . 'includes/admin-page.php' );
 
 add_filter( 'comments_template', 'wpcommento_comment_template' );
 function wpcommento_comment_template( $comment_template ) {
