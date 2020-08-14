@@ -6,7 +6,7 @@ A WordPress plugin to replace native WordPress comments with Commento - for stat
 
 ## Setup
 
-1. Setup an account with [https://commento.io/](https://commento.io/)
+1. Setup an account with [https://commento.io/](https://commento.io/) or add your Commento Host in the Settings Page
 2. Add your domain name in Commento dashboard
 3. Choose your subscription in Commento
 4. Optionally import your WordPress comments into Comment (see instructions below)
@@ -17,6 +17,12 @@ A WordPress plugin to replace native WordPress comments with Commento - for stat
 This plugin will automatically take any styles from your theme style.css and apply them to Commento.
 
 Use web inspector to find the elements you want to style and add your custom styles to your theme style.css file to have them show up.
+
+### Get Comments Number in Themes
+You can use our helper function to display the comment count in your theme
+```php
+$comments_number = get_commento_comments_number( $post_id );
+```
 
 ### How to Import WordPress Comments into Commento
 
